@@ -1,81 +1,105 @@
+using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
-public class Personagem
+public class Personagem : MonoBehaviour
 {
-   private string nome;
-   private int energia;
-   private int forca_ataque;
-   private int forca_do_pulo;
-   private int velocidade;
-   private int numero_de_pes;
-   private int numero_de_maos;
+    [ SerializeField ]
+    private string nome;
+    [ SerializeField ]
+    private int energia;
+    [ SerializeField ]
+    private int forca_ataque;
+    [ SerializeField ]
+    private float forca_do_pulo;
+    [ SerializeField ]
+    private float velocidade;
+    [ SerializeField ]
+    private int numero_de_pes;
+    [ SerializeField ]
+    private int numero_de_maos;
 
-        void.setnome(string nome)
-        {
-            this.nome = nome
-        }
-            public string nome()
-        {
-            return.nome = nome
-        }
+    public void AtribuirNome(string nome)
+    {
+        this.nome = nome;
+    }
 
+    public string Nome()
+    {
+        return this.nome;
+    }
 
-            void.setenergia(int energia)
-        {
-            this.energia = energia
-        }    
-            public int energia()
-        {
-            return.energia = energia
-        }
+    public void AtribuirEnergia(int energia)
+    {
+        this.energia = energia;
+    }
 
+    public int Energia()
+    {
+        return this.energia;
+    }
 
-            void.setforca_ataque(string forca_ataque)
-        {
-            this.forca_ataque = forca_ataque
-        }
-            public string forca_ataque()
-        {
-            return.forca_ataque = forca_ataque
-        }
+    public void AtribuirForca_Ataque(int forca_ataque)
+    {
+        this.forca_ataque = forca_ataque;
+    }
 
+    public int Forca_Ataque()
+    {
+        return this.forca_ataque;
+    }
 
-            void.setforca_do_pulo(int forca_do_pulo)
-        {
-            this.forca_do_pulo = forca_do_pulo
-        }    
-            public int forca_do_pulo()
-        {
-            return.forca_do_pulo = forca_do_pulo
-        }
+    public void AtribuirForca_do_pulo(float forca_do_pulo)
+    {
+        this.forca_do_pulo = forca_do_pulo;
+    }
 
-            void.setvelocidade(string velocidade)
-        {
-            this.velocidade = velocidade
-        }
-            public string velocidade()
-        {
-            return.velocidade = velocidade
-        }
-
-
-            void.setnumero_de_pes(int numero_de_pes)
-        {
-            this.numero_de_pes = numero_de_pes
-        }    
-            public int numero_de_pes()
-        {
-            return.numero_de_pes = numero_de_pes
-        }
+    public float Forca_do_pulo()
+    {
+        return this.forca_do_pulo;
+    }
 
 
-            void.setnumero_de_maos(string numero_de_maos)
-        {
-            this.numero_de_maos = numero_de_maos
-        }
-            public string numero_de_maos()
-        {
-            return.numero_de_maos = numero_de_maos
-        }
+    public void AtribuirVelocidade(float velocidade)
+    {
+        this.velocidade = velocidade;
+    }
 
+    public float Velocidade()
+    {
+        return this.velocidade;
+    }
+
+    public void AtribuitNumero_de_pes(int numero_de_pes)
+    {
+        this.numero_de_pes = numero_de_pes;
+    }
+
+    public int Numero_de_pes()
+    {
+        return this.numero_de_pes;
+    }
+
+    public void AtribuitNumero_de_maos(int numero_de_maos)
+    {
+        this.numero_de_maos = numero_de_maos;
+    }
+
+    public int Numero_de_maos()
+    {
+        return this.numero_de_maos;
+    }
+
+
+
+
+
+    void Start()
+    {
+        
+    }
+    void Update()
+    {
+        
+    }
 }

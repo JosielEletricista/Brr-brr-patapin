@@ -6,6 +6,12 @@ public class Teste : MonoBehaviour
     
     Caminhao caminhao = new Caminhao();
     
+    //===================================
+
+    Personagem joao = new Personagem();
+    Inimigo ork = new Inimigo();
+
+    
     void Start()
     {
         fusca.AtribuirNome("Fusca de Pai");
